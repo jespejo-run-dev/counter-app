@@ -20,6 +20,6 @@ export const FristApp = ({
 }
 
 FristApp.propTypes = {
-    title: PropTypes.string,
+    title: PropTypes.string.isRequired,
     subTitle: PropTypes.string,
 }
