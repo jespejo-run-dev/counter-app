@@ -5,6 +5,6 @@ import './styles.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-        <FristApp />
+        <FristApp title="Hola, Jespejo" />
     </React.StrictMode>
 )
