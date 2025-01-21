@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 export const FristApp = ({title, subTitle}) => {
 
     // console.log(props);
@@ -7,7 +9,12 @@ export const FristApp = ({title, subTitle}) => {
             <h1>{title}</h1>
             {/* Expresion no objeto */}
             {/* <code>{JSON.stringify(newMessage)}</code> */}
-            <p>{subTitle + 1}</p>
+            <p>{subTitle}</p>
         </>
     )
+}
+
+FristApp.propTypes = {
+    title: PropTypes.string.isRequired,
+    subTitle: PropTypes.number.isRequired,
 }
