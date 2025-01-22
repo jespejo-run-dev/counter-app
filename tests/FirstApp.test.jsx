@@ -1,5 +1,5 @@
 import { render } from "@testing-library/react";
-import { FristApp } from "../src/FirstApp";
+import { FirstApp } from "../src/FirstApp";
 
 describe('Pruebas en <FirstApp />', () => {
   
@@ -15,7 +15,7 @@ describe('Pruebas en <FirstApp />', () => {
     
     test('debe mostrar el titulo en un h1', () => {
         const title="Hola, Jespejo";
-        const {container, getByText, getByTestId} = render(<FristApp title={title} />)
+        const {container, getByText, getByTestId} = render(<FirstApp title={title} />)
 
         expect(getByText(title)).toBeTruthy();
 
@@ -30,7 +30,7 @@ describe('Pruebas en <FirstApp />', () => {
         const title="Hola, Jespejo";
         const subTitle="Soy un subtitulo";
         const {getByText, getAllByText} = render(
-            <FristApp 
+            <FirstApp 
                 title={title} 
                 subTitle={subTitle}
             />

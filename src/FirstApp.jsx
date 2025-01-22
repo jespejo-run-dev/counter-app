@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-export const FristApp = ({
+export const FirstApp = ({
     name = 'Jespejo',
     subTitle = 'no hay subtítulo',
     title = 'No hay título',
@@ -10,7 +10,7 @@ export const FristApp = ({
 
     return (
         <>
-            <div data-testid="test-title">{title}</div>
+            <h1 data-testid="test-title">{title}</h1>
             {/* Expresion no objeto */}
             {/* <code>{JSON.stringify(newMessage)}</code> */}
             <p>{subTitle}</p>
@@ -20,7 +20,7 @@ export const FristApp = ({
     )
 }
 
-FristApp.propTypes = {
+FirstApp.propTypes = {
     title: PropTypes.string.isRequired,
     subTitle: PropTypes.string,
 }
