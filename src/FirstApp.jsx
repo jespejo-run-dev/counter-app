@@ -10,9 +10,10 @@ export const FristApp = ({
 
     return (
         <>
-            <h1>{title}</h1>
+            <div data-testid="test-title">{title}</div>
             {/* Expresion no objeto */}
             {/* <code>{JSON.stringify(newMessage)}</code> */}
+            <p>{subTitle}</p>
             <p>{subTitle}</p>
             <p>{name}</p>
         </>
